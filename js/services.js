@@ -2,7 +2,7 @@
 
 angular.module('bucketList.services', [])
     .factory('API', function ($rootScope, $http, $ionicLoading, $window) {
-       var base = "http://ec2-52-30-112-75.eu-west-1.compute.amazonaws.com:8080/";
+       var base = "http://ec2-52-30-112-75.eu-west-1.compute.amazonaws.com:8080";
         $rootScope.show = function (text) {
             $rootScope.loading = $ionicLoading.show({
                 content: text ? text : 'Loading',
